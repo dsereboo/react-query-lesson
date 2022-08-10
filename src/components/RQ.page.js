@@ -3,17 +3,21 @@ import axios from "axios"
 
 
 const getSuperHeroes=()=>{
-    return axios.get("http://localhost:4000/superheroes")
+    return axios.get("http://localhost:4000/superheros")
  }
 
- 
+
 const RQ=()=>{
  
     //Requires a unique key and a function that returns a promise
-    const {isLoading, data } = useQuery("super-heroes",getSuperHeroes)
+    const {isLoading, data, isError, error } = useQuery("super-heroes",getSuperHeroes)
 
     if(isLoading){
         return<h2>Loading ....</h2>
+    }
+
+    if(isError){
+        return<h2>{error.message}</h2>
     }
 
     // console.log(data.data)
