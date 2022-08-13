@@ -7,6 +7,9 @@ import SuperHeroes from './components/SuperHeroes.page';
 import {ReactQueryDevtools} from "react-query/devtools"
 import { SuperHero } from './components/SuperHero.page.js';
 import { ParallelQueries } from './components/ParallelQueries.page';
+import { DynamicQueries } from './components/DynamicQueries.page';
+import { DependentQueries } from './components/DependentQueries.page';
+import { PaginatedQueries } from './components/PaginatedQueries.page';
 
 const queryClient=new QueryClient()
 
@@ -35,6 +38,15 @@ function App() {
         </Route>
         <Route path="/parallel">
           <ParallelQueries/>
+        </Route>
+        <Route path="/paginated">
+          <PaginatedQueries/>
+        </Route>
+        <Route path="/dependent">
+          <DependentQueries email="aaa111@exam.com"/>
+        </Route>
+        <Route path="/dynamic">
+          <DynamicQueries heroIDs={[1,3]}/>
         </Route>
         <Route path='/super-heroes'>
           <SuperHeroes/>

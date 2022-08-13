@@ -34,5 +34,60 @@
             "id":"3",
             "name":"Samiah"
         }
+    ],
+    "users":[
+        {
+            "id":"aaa111@exam.com",
+            "channel":"UG"
+        }
+    ],
+    "channels":[
+        {
+            "id":"UG",
+            "courses":["react","angular","svelte"]
+        }
+    ],
+    "colors":[
+        {
+            "id":1,
+            "label":"red"
+        },
+        {
+            "id":2,
+            "label":"yellow"
+        },
+        {
+            "id":3,
+            "label":"green"
+        },
+        {
+            "id":4,
+            "label":"blue"
+        },
+        {
+            "id":5,
+            "label":"orange"
+        },
+        {
+            "id":6,
+            "label":"violet"
+        },
+
+        {
+            "id":7,
+            "label":"cyan"
+        },
+        {
+            "id":8,
+            "label":"magenta"
+        },
+        {
+            "id":9,
+            "label":"white"
+        },
+        {
+            "id":10,
+            "label":"black"
+        }
     ]
 }
