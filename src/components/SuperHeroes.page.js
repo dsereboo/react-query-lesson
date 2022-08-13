@@ -10,7 +10,7 @@ const SuperHeroes=()=>{
     const[error, setError]=useState("")
     
     useEffect(()=>{
-        axios.get("http://localhost:4000/superheros").then(
+        axios.get("http://localhost:4000/superheroes").then(
             res=>{
                 setData(res.data)
                 setIsLoading(false)
